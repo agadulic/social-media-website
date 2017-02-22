@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My first social profile template</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- Icon Navbar -->
+		<div class="icon-nav">
+			<ul class="menu clearfix">
+				<li class="active">
+					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
+					</a>
+				</li>
+				<li class="news">
+					<a href="#news"><i class="fa fa-globe" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="settings">
+					<a href="#settings"><i class="fa fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="messages">
+					<a href="#messages"><i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown">	
+					<a href="#" class="bell"><i class="fa fa-bell" aria-hidden="true"></i><span class="w3-badge w3-green w3-tiny">3</span>
+					</a>
+					<div class="dropdown-content">
+						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-green w3-small">1</span>One new friend request</a>
+						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-red w3-small">NEW!</span>John Doe posted on your wall</a>
+						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-green w3-small">1</span>Your friend likes your post</a>
+					</div>
+				</li>
+				<li class="avatar">
+					<a href="#myaccount">
+						<img src="http://www.w3schools.com/w3images/avatar4.png" alt="Avatar" class="avatar-circle">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Page Container -->
+		<div class="page-container clearfix">
+		<!-- Left Column -->
+			<div class="left-column">
+				<div class="profile">
+					<h4 class="profile-heading">My Profile</h4>
+	  				<p class="avatar2"><img src="http://www.w3schools.com/w3images/avatar4.png" alt="Person" class="blue-avatar-circle">
+	  				</p>
+					<hr>
+					<p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i>Front-end Developer
+					</p>
+					<p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Warsaw, Poland
+					</p>
+					<p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>October 6, 1989
+					</p>
+				</div>
+				<!-- Accordion -->
+				<div class="cards-dropdown">
+					<button id="dropdownbtn1"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>My Groups</button>
+					<div id="accordion-content1"><p>Some text...</p>
+					</div>
+					<button id="dropdownbtn2"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>My Events</button>
+					<div id="accordion-content2"><p>Some other text...</p>
+					</div>
+					<button id="dropdownbtn3" type="button"><i class="fa fa-users fa-fw w3-margin-right"></i>My Photos</button>
+					<div id="accordion-content3">
+						<img src="http://www.w3schools.com/w3images/lights.jpg">
+						<img src="http://www.w3schools.com/w3images/nature.jpg">
+						<img src="http://www.w3schools.com/w3images/mountains.jpg">
+						<img src="http://www.w3schools.com/w3images/forest.jpg">
+						<img src="http://www.w3schools.com/w3images/nature.jpg">
+						<img src="http://www.w3schools.com/w3images/fjords.jpg">
+					</div>
+				</div>
+				<!-- Interests -->
+				<div class="interests">
+					<div class="container">
+					<br>
+						<p>Interests</p>
+						<p>
+						<span class="w3-tag w3-small w3-theme-d5">Literature</span>
+						<span class="w3-tag w3-small w3-theme-d4">JavaScript</span>
+						<span class="w3-tag w3-small w3-theme-d3">HTML5</span>
+						<span class="w3-tag w3-small w3-theme-d2">Games</span>
+						<span class="w3-tag w3-small w3-theme-d1">Friends</span>
+						<span class="w3-tag w3-small w3-theme">Games</span>
+						<span class="w3-tag w3-small w3-theme-l1">CSS3</span>
+						<span class="w3-tag w3-small w3-theme-l2">Healthy Food</span>
+						<span class="w3-tag w3-small w3-theme-l3">Design</span>
+						<span class="w3-tag w3-small w3-theme-l4">J-drama</span>
+						<span class="w3-tag w3-small w3-theme-l5">Manga/Anime</span>
+						</p>
+					</div>
+				</div>
+				<!-- Alert Box -->
+				<div id="alert" class="alert">
+					<span class="close-button">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</span>
+					<p>
+						Hey!
+					</p>
+					<br>
+					<p>People are looking at your profile. Find out who.</p>
+				</div>
+			</div>
+				<!-- End of Left Column -->
+				<!-- Middle Column -->
+			<div class="middle-column">
+				<div class="post-container">
+					<div class="social-media-container">
+						<h6>Write your message:</h6>
+						<p contenteditable="true" class="post-content">Status: Feeling Blue</p>
+						<button type="button" class="post-button"><i class="fa fa-pencil"></i>Post</button>
+					</div>
+				</div>
+				<div class="container-post1">
+					<img src="http://www.w3schools.com/w3images/avatar2.png" alt="avatar3" class="post-avatar"><h4>John Doe</h4>
+					<span class="time">1 min</span>
+					<hr class="clear"></hr>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div class="post-images">
+						<img src="http://www.w3schools.com/w3images/forest.jpg" class="post-image1">
+						<img src="http://www.w3schools.com/w3images/mountains.jpg" class=post-image-2>
+						<button type="button" class="images-button1"><i class="fa fa-thumbs-up"></i>Like</button>
+						<button type="button" class="images-button2"><i class="fa fa-comment"></i>Comment</button>
+					</div>
+				</div>
+				<div class="container-post2">
+					<img src="http://www.w3schools.com/w3images/avatar5.png" alt="avatar3" class="post-avatar2"><h4>Jane Doe</h4>
+					<span class="time2">12 min</span>
+					<hr class="clear2"></hr>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<button type="button" class="images-button3"><i class="fa fa-thumbs-up"></i>Like</button>
+					<button type="button" class="images-button4"><i class="fa fa-comment"></i>Comment</button>
+				</div>
+				<div class="container-post3">
+					<img src="http://www.w3schools.com/w3images/avatar6.png" alt="avatar4" class="post-avatar3"><h4>Astrid Johnes</h4>
+					<span class="time3">32 min</span>
+					<hr class="clear3"></hr>
+					<p>Have you seen this?
+					</p>
+					<img src="http://www.w3schools.com/w3images/fjords.jpg" class="fjords">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button type="button" class="images-button5"><i class="fa fa-thumbs-up"></i>Like</button>
+					<button type="button" class="images-button6"><i class="fa fa-comment"></i>Comment</button>
+				</div>
+			<!-- End of Middle Column-->
+			</div>
+			<!-- Right Column -->
+			<div class="right-column">
+				<div class="upcoming-events">
+					<p>Upcoming Events</p>
+					<div class="image-events">
+					<img src="http://www.w3schools.com/w3images/forest.jpg">
+					</div>
+					<p>Holiday</p>
+					<p>Friday 15:00</p>
+					<button type="button" class="button-events">Info</button>
+				</div>
+				<div class="friend-request">
+					<p>Friend Request</p>
+					<div class="avatar-request">
+						<img src="http://www.w3schools.com/w3images/avatar6.png">Agnes Doe
+					</div>
+					<div class="buttons">
+						<button type="button" class="request-button1"><i class="fa fa-check"></i></button>
+						<button type="button" class="request-button2"><i class="fa fa-remove"></i></button>
+					</div>
+				</div>
+				<div class="ads">
+					<p>ads</p>
+				</div>
+				<div class="calendar">
+					<p><i class="fa fa-bug w3-xxlarge"></i></p>
+				</div>
+			</div>
+		<!-- End of Right Column -->
+		</div>
+		<!-- End of Page Container -->
+		<br>
+		<!-- Footer -->
+		<div class="footer">
+			<h5>Footer</h5>
+		</div>
+		<div class="footer2">
+			<h6>Powered by Aga</h6>
+		</div>
+		<!-- End of Footer -->
+		<script>
+		//Accordion //
+				jQuery(document).ready(function(){
+	        		jQuery('#dropdownbtn1').on('click', function(event) {        
+	             		jQuery('#accordion-content1').toggle('show');
+	        		});
+	    		});
+	    		jQuery(document).ready(function(){
+	        		jQuery('#dropdownbtn2').on('click', function(event) {        
+	             		jQuery('#accordion-content2').toggle('show');
+	        		});
+	    		});
+	    		jQuery(document).ready(function(){
+	        		jQuery('#dropdownbtn3').on('click', function(event) {        
+	             		jQuery('#accordion-content3').toggle('show');
+	        		});
+	    		});
+	    //Alert Window//
+	    		$(document).ready(function(){
+	    			$(".close-button").click(function(){
+	       				 $(".alert").css("visibility", "hidden");
+	    			});
+				});
+		</script>
+	</body>
+</html>
