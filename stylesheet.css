@@ -223,6 +223,8 @@ div.profile {
 	margin: 20px 0;
 }
 
+/* Accordion */
+
 .cards-dropdown {
 	margin-top: 25px;
 	background-color: #7d97a5;
@@ -239,7 +241,7 @@ div.profile {
 	border-radius: 2px;
 }
 
-#dropdownbtn1, #dropdownbtn2, #dropdownbtn3 {
+.accordion {
 	text-align: left;
 	background-color: #7d97a5;
 	color: white;
@@ -253,12 +255,16 @@ div.profile {
 	width: 100%;
 }
 
-#dropdownbtn1:hover, #dropdownbtn2:hover, #dropdownbtn3:hover {
+.accordion:hover {
 	 background-color: #3a4b53;
 	 box-shadow: 0px 12px 10px 0px rgba(0,0,0,0.24), 10px 17px 50px 5px rgba(0,0,0,0.19);
 }
 
-#accordion-content1, #accordion-content2, #accordion-content3 {
+.accordion .fa:hover {
+	color: #fff;
+}
+
+.accordion-content, .accordion-content3 {
 	position: relative;
 	background-color: #fff;
 	width: 100%;
@@ -267,15 +273,11 @@ div.profile {
 	overflow: auto;
 }
 
-#accordion-content1 p, #accordion-content2 p {
+.accordion-content p {
 	padding: 10px 16px;	
 }
 
-.show {
-	display: block;
-}
-
-#accordion-content3 {
+.accordion-content3 {
 	padding: 0 8px;
 	clear: both;
 	display: table;
@@ -283,13 +285,15 @@ div.profile {
 	display: none;
 }
 
-#accordion-content3 img {
+.accordion-content3 img {
 	width: 50%;
 	padding: 0 8px;
 	float: left;
 	margin-bottom: 12px;
 	margin-top: 12px;
 }
+
+/* Interests */
 
 div.interests {
 	margin-top: 25px;
@@ -368,10 +372,6 @@ span.w3-theme-l5 {
 	color: #000;
 }
 
-#accordion-content3 {
-	padding: 0 8px;
-}
-
 div.alert {
 	color: #000;
 	background-color: #dfe5e8;
@@ -391,8 +391,6 @@ div.alert {
 	color: grey;
 	cursor: pointer;
 }
-
-/* End of Left Column */
 
 /* Middle Column */
 
