@@ -2,6 +2,7 @@
 <html lan="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title>My first social media website</title>
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,7 +13,7 @@
 	</head>
 	<body id="gray">
 	<!-- Icon Navbar -->
-		<nav class="icon-nav">
+		<nav class="icon-nav" id="myTopnav">
 			<ul class="menu clearfix">
 				<li class="active">
 					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
@@ -44,6 +45,8 @@
 						<img src="http://www.w3schools.com/w3images/avatar4.png" alt="Avatar" class="avatar-circle">
 					</a>
 				</li>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+				</a>
 			</ul>
 		</nav>
 		<!-- Page Container -->
@@ -209,6 +212,15 @@
 	        } else {
 	            panel.style.display = "block";
 	        }
+	    }
+	}
+
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "icon-nav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "icon-nav";
 	    }
 	}
 	</script>
