@@ -213,8 +213,7 @@ li.dropdown {
 /* Left Column */
 
 div.left-column {
-	width: 24.9%;
-	margin-right: 15px;
+	margin-right: 14px;
 	float: left;
 }
 
@@ -421,6 +420,19 @@ div.alert {
 	cursor: pointer;
 }
 
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+	.left-column {width: 100%!important;}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.left-column {width: 100%!important;}
+}
+/* tablets/desktops and up ———– */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.left-column {width: 100%!important;}
+}
+
 /* Middle Column */
 
 .middle-column {
@@ -471,6 +483,10 @@ h6 {
 	box-shadow: 0px 12px 10px 0px rgba(0,0,0,0.24), 10px 17px 50px 5px rgba(0,0,0,0.19);
 }
 
+.post-button i.fa-pencil:hover {
+	color: #fff;
+}
+
 .fa-pencil {
 	margin-right: 6px;
 }
@@ -506,6 +522,14 @@ h6 {
 	padding: 1em 16px;
 	float: left;
 	width: 100%;
+}
+
+.container-post2 i.fa-thumbs-up:hover, .container-post2 i.fa-comment:hover {
+	color: #fff;
+}
+
+.container-post3 i.fa-thumbs-up:hover, .container-post3 i.fa-comment:hover {
+	color: #fff;
 }
 
 .container-post1 h4, .container-post2 h4, .container-post3 h4 {
@@ -563,6 +587,9 @@ h6 {
 .post-button:hover,.images-button1:hover, .images-button2:hover, .images-button3:hover, .images-button4:hover, .images-button5:hover, .images-button6:hover {
 	transition: background-color .25s,color .15s,box-shadow .15s,opacity .25s,filter .25s,border .15s;
 	box-shadow: 0px 12px 10px 0px rgba(0,0,0,0.24), 10px 17px 50px 5px rgba(0,0,0,0.19);
+}
+.post-images i.fa-thumbs-up:hover, .post-images i.fa-comment:hover {
+	color: #fff;
 }
 
 .fa-thumbs-up, .fa-comment {

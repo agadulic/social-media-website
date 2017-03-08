@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="grid-view.css" type="text/css"
+		<link rel="stylesheet" href="grid-view.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="gray">
@@ -52,7 +52,7 @@
 		<!-- Page Container -->
 		<div class="page-container clearfix">
 		<!-- Left Column -->
-			<div class="left-column">
+			<div class="left-column col-3">
 				<section class="profile">
 					<h4 class="profile-heading">My Profile</h4>
 	  				<p class="avatar2"><img src="http://www.w3schools.com/w3images/avatar4.png" alt="Person" class="blue-avatar-circle">
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<!-- Middle Column -->
-			<div class="middle-column">
+			<div class="middle-column col.m12 col.l12">
 				<div class="post-container">
 					<section class="social-media-container">
 						<h6>Write your message:</h6>
@@ -159,7 +159,7 @@
 				</div>
 			</div>
 			<!-- Right Column -->
-			<div class="right-column">
+			<div class="right-column col.m12 col.l12">
 				<div class="upcoming-events">
 					<p>Upcoming Events</p>
 					<div class="image-events">
@@ -218,7 +218,7 @@
 	function myFunction() {
 	    var x = document.getElementById("myTopnav");
 	    if (x.className === "icon-nav") {
-	        x.className += " responsive";
+	        x.className += "responsive";
 	    } else {
 	        x.className = "icon-nav";
 	    }
