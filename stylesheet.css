@@ -1,24 +1,3 @@
-/**
-	*
-**/
-
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-.clearfix ::after ::before {
-	display: table;
-	content: " ";
-	clear: both;
-}
-
-#gray {
-	color: #000;
-	background-color: #f5f7f8;
-}
-
 /* Navigation Bar */
 
 .icon-nav {
@@ -207,21 +186,9 @@ li.dropdown {
 	max-width: 1400px;
 	margin-top: 80px;
 	clear: both;
-	padding: 0.1em 16px;
 }
 
 /* Left Column */
-
-div.left-column {
-	margin-right: 14px;
-	float: left;
-}
-
-.left-column:after {
-	clear: both;
-	display: table;
-	content: "";
-}
 
 section.profile {
 	width: 100%;
@@ -412,7 +379,7 @@ div.alert {
 
 .fa-times {
 	float: right;
-	font-size: 24px!important;
+	font-size: 24px;
 }
 
 .fa-times:hover {
@@ -420,25 +387,15 @@ div.alert {
 	cursor: pointer;
 }
 
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-	.left-column {width: 100%!important;}
-}
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-	.left-column {width: 100%!important;}
-}
-/* tablets/desktops and up ———– */
-@media (min-width: 992px) and (max-width: 1199px) {
-	.left-column {width: 100%!important;}
-}
-
 /* Middle Column */
 
-.middle-column {
-	width: 56%;
-	float: left;
-	margin-right: 15px;
+div.middle-column {
+	padding-left: 0;
+}
+
+@media (min-width: 300px) and (max-width: 749px) {
+	div.middle-column{padding-left: 10px;}
+	div.right-column{padding-left: 10px;}
 }
 
 .post-container {
@@ -616,9 +573,8 @@ h6 {
 
 /* Right Column */
 
-.right-column {
-	width: 16.8%;
-	float: left;
+div.right-column {
+	padding-left: 0;
 }
 
 .upcoming-events {
