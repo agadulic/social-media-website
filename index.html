@@ -7,25 +7,26 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="grid-view.css" type="text/css"
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body id="gray">
 		<!-- Icon Navbar -->
-		<div class="icon-nav">
+		<nav class="icon-nav">
 			<ul class="menu clearfix">
 				<li class="active">
 					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
 					</a>
 				</li>
-				<li class="news">
+				<li class="nav-btn news">
 					<a href="#news"><i class="fa fa-globe" aria-hidden="true"></i>
 					</a>
 				</li>
-				<li class="settings">
+				<li class="nav-btn settings">
 					<a href="#settings"><i class="fa fa-user" aria-hidden="true"></i>
 					</a>
 				</li>
-				<li class="messages">
+				<li class="nav-btn messages">
 					<a href="#messages"><i class="fa fa-envelope" aria-hidden="true"></i>
 					</a>
 				</li>
@@ -33,23 +34,23 @@
 					<a href="#" class="bell"><i class="fa fa-bell" aria-hidden="true"></i><span class="w3-badge w3-green w3-tiny">3</span>
 					</a>
 					<div class="dropdown-content">
-						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-green w3-small">1</span>One new friend request</a>
-						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-red w3-small">NEW!</span>John Doe posted on your wall</a>
-						<a href="#" style="text-decoration: none;"><span class="w3-badge w3-green w3-small">1</span>Your friend likes your post</a>
+						<a href="#"><span class="w3-badge w3-green w3-small">1</span>One new friend request</a>
+						<a href="#"><span class="w3-badge w3-red w3-small">NEW!</span>John Doe posted on your wall</a>
+						<a href="#"><span class="w3-badge w3-green w3-small">1</span>Your friend likes your post</a>
 					</div>
 				</li>
-				<li class="avatar">
+				<li class="nav-btn avatar">
 					<a href="#myaccount">
 						<img src="http://www.w3schools.com/w3images/avatar4.png" alt="Avatar" class="avatar-circle">
 					</a>
 				</li>
 			</ul>
-		</div>
+		</nav>
 		<!-- Page Container -->
 		<div class="page-container clearfix">
 		<!-- Left Column -->
-			<div class="left-column">
-				<div class="profile">
+			<div class="left-column clearfix">
+				<section class="profile">
 					<h4 class="profile-heading">My Profile</h4>
 	  				<p class="avatar2"><img src="http://www.w3schools.com/w3images/avatar4.png" alt="Person" class="blue-avatar-circle">
 	  				</p>
@@ -60,7 +61,7 @@
 					</p>
 					<p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>October 6, 1989
 					</p>
-				</div>
+				</section>
 				<!-- Accordion -->
 				<div class="cards-dropdown">
 					<button id="dropdownbtn1"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>My Groups</button>
@@ -105,7 +106,7 @@
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</span>
 					<p>
-						Hey!
+					Hey!
 					</p>
 					<br>
 					<p>People are looking at your profile. Find out who.</p>
