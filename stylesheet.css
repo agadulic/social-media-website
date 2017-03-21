@@ -14,6 +14,17 @@
 	clear: both;
 }
 
+.nav-btn {
+	display: block;
+	color: #fff;
+	padding: 14px 24px;
+	float: left;
+	text-align: left;
+	transition: all 0.3s ease;
+}
+
+/* body */
+
 #gray {
 	color: #000;
 	background-color: #f5f7f8;
@@ -58,15 +69,6 @@
 
 .fa-home {
 	margin-right: 4px;
-}
-
-.messages, .news, .settings, .avatar {
-	display: block;
-	color: #fff;
-	padding: 14px 24px;
-	float: left;
-	text-align: left;
-	transition: all 0.3s ease;
 }
 
 .dropdown {
@@ -223,7 +225,13 @@ div.left-column {
 	content: "";
 }
 
-section.profile {
+.left-column {
+	width: 24.9%;
+	margin-right: 15px;
+	float: left;
+}
+
+.profile {
 	width: 100%;
 	float: left;
 	padding: 15px;
@@ -237,7 +245,7 @@ section.profile {
 	font-weight: 400;
 	text-align: center;
 }
-
+	
 .blue-avatar-circle {
 	height: 106px;
 	width: 106px;
