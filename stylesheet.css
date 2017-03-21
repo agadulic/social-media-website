@@ -165,28 +165,54 @@ li.dropdown {
 @media screen and (max-width: 600px) {
   .icon-nav li:not(:first-child) {display: none;}
   .icon-nav a.icon {
-    float: right;
+    right: 0;
+    top: 12px;
+    right: 20px;
     display: block;
     color: #fff;
-    padding: 14px 24px;
     text-decoration: none;
+    position: absolute;
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .icon-nav.responsive {position: relative;}
+  .icon-nav.responsive {
+  	position: relative;
+  }
   .icon-nav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 12px;
+    right: 20px;
+    cursor: pointer;
   }
-  .icon-nav.responsive li:nth-child(-n+4) {
+  .icon-nav.responsive li {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .icon-nav li:hover:not(.active) {
+  	background-color: #eee;
+  	color: #000;
   }
 }
 
+nav.responsive ul.menu {
+	display: block;
+}
+nav ul.menu-mobile {
+	display: none;
+}
+
+nav.responsive ul.menu {
+	display: none;
+}
+nav.responsive ul.menu-mobile {
+	display: block;
+}
 
 /* Page container */
 

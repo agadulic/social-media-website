@@ -14,6 +14,7 @@
 	<body id="gray">
 	<!-- Icon Navbar -->
 		<nav class="icon-nav" id="myTopnav">
+			<a id="foo" class="icon">&#9776;</a>
 			<ul class="menu clearfix">
 				<li class="active">
 					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
@@ -45,8 +46,15 @@
 						<img src="http://www.w3schools.com/w3images/avatar4.png" alt="Avatar" class="avatar-circle">
 					</a>
 				</li>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
-				</a>
+			</ul>
+			<ul class="menu-mobile clearfix">
+				<li class="active">
+					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
+					</a>
+				</li>
+				<li>Settings</li>
+				<li>Messages</li>
+				<li>News</li>
 			</ul>
 		</nav>
 		<!-- Page Container -->
@@ -223,6 +231,12 @@
 	        x.className = "icon-nav";
 	    }
 	}
+	var foo 		= document.getElementById('foo');
+  var topNav 	= document.getElementById("myTopnav");
+
+	foo.addEventListener('click', function(){
+      topNav.classList.toggle('responsive')
+	});
 	</script>
 	</body>
 </html>

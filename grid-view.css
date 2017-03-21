@@ -22,13 +22,13 @@
 @media (min-width: 300px) and (max-width: 600px) {
 .col-sm-1{width:8.33333%}
 .col-sm-2{width:16.66666%}
-.col-sm-3,.mquarter{width:24.99999%}
-.col-sm-4,.mthird{width:33.33333%}
+.col-sm-3,.smquarter{width:24.99999%}
+.col-sm-4,.smthird{width:33.33333%}
 .col-sm-5{width:41.66666%}
-.col-sm-6,.mhalf{width:49.99999%}
+.col-sm-6,.smhalf{width:49.99999%}
 .col-sm-7{width:58.33333%}
-.col-sm-8,.mtwothird{width:66.66666%}
-.col-sm-9,.mthreequarter{width:74.99999%}
+.col-sm-8,.smtwothird{width:66.66666%}
+.col-sm-9,.smthreequarter{width:74.99999%}
 .col-sm-10{width:83.33333%}
 .col-sm-11{width:91.66666%}
 .col-sm-12{width:100%}
