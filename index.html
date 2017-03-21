@@ -2,17 +2,18 @@
 <html lan="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title>My first social media website</title>
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="grid-view.css" type="text/css"
+		<link rel="stylesheet" href="grid-view.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="gray">
-		<!-- Icon Navbar -->
-		<nav class="icon-nav">
+	<!-- Icon Navbar -->
+		<nav class="icon-nav" id="myTopnav">
 			<ul class="menu clearfix">
 				<li class="active">
 					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Logo</span>
@@ -44,12 +45,14 @@
 						<img src="http://www.w3schools.com/w3images/avatar4.png" alt="Avatar" class="avatar-circle">
 					</a>
 				</li>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+				</a>
 			</ul>
 		</nav>
 		<!-- Page Container -->
 		<div class="page-container clearfix">
 		<!-- Left Column -->
-			<div class="left-column clearfix">
+			<div class="left-column clearfix col-3">
 				<section class="profile">
 					<h4 class="profile-heading">My Profile</h4>
 	  				<p class="avatar2"><img src="http://www.w3schools.com/w3images/avatar4.png" alt="Person" class="blue-avatar-circle">
@@ -64,14 +67,14 @@
 				</section>
 				<!-- Accordion -->
 				<div class="cards-dropdown">
-					<button id="dropdownbtn1"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>My Groups</button>
-					<div id="accordion-content1"><p>Some text...</p>
+					<button class="accordion"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>My Groups</button>
+					<div class="accordion-content"><p>Some text...</p>
 					</div>
-					<button id="dropdownbtn2"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>My Events</button>
-					<div id="accordion-content2"><p>Some other text...</p>
+					<button class="accordion"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>My Events</button>
+					<div class="accordion-content"><p>Some other text...</p>
 					</div>
-					<button id="dropdownbtn3" type="button"><i class="fa fa-users fa-fw w3-margin-right"></i>My Photos</button>
-					<div id="accordion-content3">
+					<button class="accordion"><i class="fa fa-users fa-fw w3-margin-right"></i>My Photos</button>
+					<div class="accordion-content3">
 						<img src="http://www.w3schools.com/w3images/lights.jpg">
 						<img src="http://www.w3schools.com/w3images/nature.jpg">
 						<img src="http://www.w3schools.com/w3images/mountains.jpg">
@@ -102,25 +105,22 @@
 				</div>
 				<!-- Alert Box -->
 				<div id="alert" class="alert">
-					<span class="close-button">
+					<span class="close-button" onclick="this.parentElement.style.display='none';">
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</span>
-					<p>
-					Hey!
-					</p>
+					<p>Hey!</p>
 					<br>
 					<p>People are looking at your profile. Find out who.</p>
 				</div>
 			</div>
-				<!-- End of Left Column -->
-				<!-- Middle Column -->
-			<div class="middle-column">
+			<!-- Middle Column -->
+			<div class="middle-column col.m12 col.l12">
 				<div class="post-container">
-					<div class="social-media-container">
+					<section class="social-media-container">
 						<h6>Write your message:</h6>
 						<p contenteditable="true" class="post-content">Status: Feeling Blue</p>
 						<button type="button" class="post-button"><i class="fa fa-pencil"></i>Post</button>
-					</div>
+					</section>
 				</div>
 				<div class="container-post1">
 					<img src="http://www.w3schools.com/w3images/avatar2.png" alt="avatar3" class="post-avatar"><h4>John Doe</h4>
@@ -157,10 +157,9 @@
 					<button type="button" class="images-button5"><i class="fa fa-thumbs-up"></i>Like</button>
 					<button type="button" class="images-button6"><i class="fa fa-comment"></i>Comment</button>
 				</div>
-			<!-- End of Middle Column-->
 			</div>
 			<!-- Right Column -->
-			<div class="right-column">
+			<div class="right-column col.m12 col.l12">
 				<div class="upcoming-events">
 					<p>Upcoming Events</p>
 					<div class="image-events">
@@ -192,36 +191,38 @@
 		<!-- End of Page Container -->
 		<br>
 		<!-- Footer -->
-		<div class="footer">
+		<footer class="footer">
 			<h5>Footer</h5>
-		</div>
-		<div class="footer2">
+		</footer>
+		<footer class="footer2">
 			<h6>Powered by Aga</h6>
-		</div>
+		</footer>
 		<!-- End of Footer -->
-		<script>
-		//Accordion //
-				jQuery(document).ready(function(){
-	        		jQuery('#dropdownbtn1').on('click', function(event) {        
-	             		jQuery('#accordion-content1').toggle('show');
-	        		});
-	    		});
-	    		jQuery(document).ready(function(){
-	        		jQuery('#dropdownbtn2').on('click', function(event) {        
-	             		jQuery('#accordion-content2').toggle('show');
-	        		});
-	    		});
-	    		jQuery(document).ready(function(){
-	        		jQuery('#dropdownbtn3').on('click', function(event) {        
-	             		jQuery('#accordion-content3').toggle('show');
-	        		});
-	    		});
-	    //Alert Window//
-	    		$(document).ready(function(){
-	    			$(".close-button").click(function(){
-	       				 $(".alert").css("visibility", "hidden");
-	    			});
-				});
-		</script>
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].onclick = function(){
+	        this.classList.toggle("active");
+
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    }
+	}
+
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "icon-nav") {
+	        x.className += "responsive";
+	    } else {
+	        x.className = "icon-nav";
+	    }
+	}
+	</script>
 	</body>
 </html>
