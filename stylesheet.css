@@ -198,6 +198,26 @@ li.dropdown {
 
 /* Left Column */
 
+<<<<<<< HEAD
+=======
+div.left-column {
+	margin-right: 14px;
+	float: left;
+}
+
+.left-column:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.left-column {
+	width: 24.9%;
+	margin-right: 15px;
+	float: left;
+}
+
+>>>>>>> cd39334314166f0d50873a70bb960ac162e12f88
 .profile {
 	width: 100%;
 	float: left;
