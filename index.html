@@ -4,12 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 		<title>My first social media website</title>
-		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+		<link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="grid-view.css" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="gray">
 	<!-- Icon Navbar -->
@@ -174,7 +173,7 @@
 					<img src="http://www.w3schools.com/w3images/forest.jpg">
 					</div>
 					<p>Holiday</p>
-					<p>Friday 15:00</p>
+					<p id="countdown"></p>
 					<button type="button" class="button-events">Info</button>
 				</div>
 				<div class="friend-request">
@@ -206,37 +205,7 @@
 			<h6>Powered by Aga</h6>
 		</footer>
 		<!-- End of Footer -->
-	<script>
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-	    acc[i].onclick = function(){
-	        this.classList.toggle("active");
-
-	        var panel = this.nextElementSibling;
-	        if (panel.style.display === "block") {
-	            panel.style.display = "none";
-	        } else {
-	            panel.style.display = "block";
-	        }
-	    }
-	}
-
-	function myFunction() {
-	    var x = document.getElementById("myTopnav");
-	    if (x.className === "icon-nav") {
-	        x.className += "responsive";
-	    } else {
-	        x.className = "icon-nav";
-	    }
-	}
-	var foo 		= document.getElementById('foo');
-  var topNav 	= document.getElementById("myTopnav");
-
-	foo.addEventListener('click', function(){
-      topNav.classList.toggle('responsive')
-	});
-	</script>
+	<script type="javascript/text" src="./JavaScript/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</body>
 </html>
